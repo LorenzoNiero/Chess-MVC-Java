@@ -5,15 +5,12 @@ import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import javax.swing.*;
+import ChessBoards.TraditionalBoard;
 import ChessGame.GameViewer;
 import Pieces.*;
 import java.util.Vector;
 
-
-
 public class Controller {
-
-
 
     static GameViewer viewer; // User interaction
     public static TraditionalBoard board;
@@ -147,6 +144,14 @@ public class Controller {
                     }
                     else
                     {
+                        viewer.mouseX=newx;
+                        viewer.mouseY=newy;
+                        board.mouseX=newx;
+                        board.mouseY=newy;
+                        Vector<Pair> moves = board.getValidMoves();
+                        viewer.addMoves(moves);
+                        viewer.repaint();
+                    }
                 }
                 //pause is true
                 else
@@ -215,4 +220,14 @@ public class Controller {
         else
             return -1;
     }
+
+	public static TraditionalBoard getBoard() {
+		return board;
+	}
+
+	public static void setBoard(TraditionalBoard board) {
+		Controller.board = board;
+	}
+    
+    
 }
