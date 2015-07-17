@@ -164,28 +164,6 @@ public class GameViewer extends JPanel {
                 layout.getConstraints(p2);
         labelCon.setX(Spring.constant(5));
         labelCon.setY(Spring.constant(75));
-
-
-        SpringLayout.Constraints  scoreCons =
-                layout.getConstraints(p1s);
-        scoreCons.setX(Spring.constant(50));
-        scoreCons.setY(Spring.constant(50));
-
-        SpringLayout.Constraints  scoreCon =
-                layout.getConstraints(p2s);
-        scoreCon.setX(Spring.constant(50));
-        scoreCon.setY(Spring.constant(100));
-
-
-
-        scoreBoard.setSize(250, 250);
-        scoreBoard.setLocation(560, 0);
-        scoreBoard.setVisible(true);
-
-    }
-
-    public void updateScore(int turn)
-    {
         if(turn%2== 0)
             p2Score++;
         else

@@ -147,14 +147,6 @@ public class Controller {
                     }
                     else
                     {
-                        viewer.mouseX=newx;
-                        viewer.mouseY=newy;
-                        board.mouseX=newx;
-                        board.mouseY=newy;
-                        Vector<Pair> moves = board.getValidMoves();
-                        viewer.addMoves(moves);
-                        viewer.repaint();
-                    }
                 }
                 //pause is true
                 else
