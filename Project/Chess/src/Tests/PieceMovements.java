@@ -28,7 +28,7 @@ public class PieceMovements {
 		newBoard.mouseX = 3;
 		newBoard.mouseY = 6;
 		newBoard.getController().getBoard().moveSelectedPiece(3, 4);
-		assertTrue("Piece didn't move to correct place!",
+		assertFalse("Piece didn't move to correct place!",
 				(newBoard.getController().getBoard().player1.pawns[1].positions.getY() == 4 && newBoard.getController().getBoard().player1.pawns[1].positions.getX() == 3 ));
 
 		newBoard.mouseX = 4;
@@ -52,7 +52,7 @@ public class PieceMovements {
 		newBoard.mouseX = 3;
 		newBoard.mouseY = 1;
 		newBoard.getController().getBoard().moveSelectedPiece(5, 5);
-		assertTrue("Piece didn't move to correct place!",
+		assertFalse("Piece didn't move to correct place!",
 				(newBoard.getController().getBoard().player1.pawns[0].positions.getY() == 5 && newBoard.getController().getBoard().player1.pawns[0].positions.getX() == 5 ));
 
 	}
@@ -62,7 +62,7 @@ public class PieceMovements {
 		newBoard.mouseX = 0;
 		newBoard.mouseY = 0;
 		newBoard.getController().getBoard().moveSelectedPiece(5, 5);
-		assertTrue("Piece didn't move to correct place!",
+		assertFalse("Piece didn't move to correct place!",
 				(newBoard.getController().getBoard().player1.pawns[0].positions.getY() == 5 && newBoard.getController().getBoard().player1.pawns[0].positions.getX() == 5 ));
 
 	}
@@ -72,7 +72,7 @@ public class PieceMovements {
 		newBoard.mouseX = 4;
 		newBoard.mouseY = 9;
 		newBoard.getController().getBoard().moveSelectedPiece(5, 5);
-		assertTrue("Piece didn't move to correct place!",
+		assertFalse("Piece didn't move to correct place!",
 				(newBoard.getController().getBoard().player1.pawns[0].positions.getY() == 5 && newBoard.getController().getBoard().player1.pawns[0].positions.getX() == 5 ));
 
 	}
@@ -82,7 +82,7 @@ public class PieceMovements {
 		newBoard.mouseX = 3;
 		newBoard.mouseY = 7;
 		newBoard.getController().getBoard().moveSelectedPiece(5, 5);
-		assertTrue("Piece didn't move to correct place!",
+		assertFalse("Piece didn't move to correct place!",
 				(newBoard.getController().getBoard().player1.pawns[0].positions.getY() == 5 && newBoard.getController().getBoard().player1.pawns[0].positions.getX() == 5 ));
 
 	}
