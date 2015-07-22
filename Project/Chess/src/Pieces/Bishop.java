@@ -1,8 +1,6 @@
 package Pieces;
 
 import ChessBoards.Grid;
-import ChessGame.Player;
-
 import java.util.Vector;
 
 public class Bishop extends Piece{

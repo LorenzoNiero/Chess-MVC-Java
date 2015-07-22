@@ -2,7 +2,6 @@ package ChessBoards;
 
 import Pieces.*;
 
-
 public class MoveHolder {
     private Piece movedP;
     private Piece eatenP;

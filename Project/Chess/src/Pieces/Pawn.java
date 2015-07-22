@@ -1,9 +1,7 @@
 package Pieces;
 
 import java.util.Vector;
-
 import ChessBoards.Grid;
-import ChessGame.Player;
 
 
 public class Pawn extends Piece{

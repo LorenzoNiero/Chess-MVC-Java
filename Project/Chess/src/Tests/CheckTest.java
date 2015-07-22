@@ -2,8 +2,6 @@ package Tests;
 
 import static org.junit.Assert.*;
 
-import java.awt.Graphics;
-
 import org.junit.Before;
 import org.junit.Test;
 
@@ -15,10 +13,8 @@ public class CheckTest {
 	
 	@Before
 	public void setUp() {
-		
 		Controller c = new Controller();
 	    viewer = new GameViewer(c);
-		
 	}
 	
 	@Test
@@ -35,8 +31,6 @@ public class CheckTest {
 		viewer.getController().getBoard().moveSelectedPiece(3, 7);
 		assertFalse("King cannot move there, or else will be eaten!",
 				(viewer.getController().getBoard().player1.pawns[1].positions.getY() == 7 && viewer.getController().getBoard().player1.pawns[1].positions.getX() == 3 ));
-
-		
 	}
 
 }

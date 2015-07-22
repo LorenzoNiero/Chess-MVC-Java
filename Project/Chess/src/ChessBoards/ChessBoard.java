@@ -3,7 +3,6 @@ package ChessBoards;
 import ChessGame.Player;
 import Pieces.Piece;
 
-
 public interface ChessBoard {
 
     public Piece getPieces(Player player, char name, int index);
@@ -15,6 +14,4 @@ public interface ChessBoard {
     public void forfeit();
 
     public void printGrid();
-
-
 }

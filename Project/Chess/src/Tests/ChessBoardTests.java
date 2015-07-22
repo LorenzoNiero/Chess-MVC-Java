@@ -2,7 +2,6 @@ package Tests;
 
 import static org.junit.Assert.*;
 
-import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -11,15 +10,11 @@ import ChessBoards.TraditionalBoard;
 public class ChessBoardTests {
 	TraditionalBoard newBoard;
 
-	/**
-	 * @throws java.lang.Exception
-	 */
 	@Before
 	public void setUp() throws Exception
 	{
 		newBoard = new TraditionalBoard();
 	}
-
 
 	@Test
 	public void testChessBoard()

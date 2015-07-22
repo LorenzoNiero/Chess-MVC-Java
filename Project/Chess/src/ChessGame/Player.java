@@ -6,15 +6,11 @@ public class Player {
 	
 	public Pawn pawns []= new Pawn[8];
 	public Castle castles [] = new Castle[2];
-//	public Wazir wazirs [] = new Wazir[2];
-//	public Berolina berolinas[] = new Berolina[2];
 	public Horse horses [] = new Horse[2];
 	public Bishop bishops [] = new Bishop[2];
 	public King king;
 	public Queen queen;
 	public String color;
-	
-
 	
 	public Player(String type, Grid [][] grid) 
 	{
@@ -28,8 +24,6 @@ public class Player {
 			setupBlackPieces(grid);
 		}
 	}
-
-	
 	
 	private void setupWhitePieces(Grid [][] g) 
 	{	

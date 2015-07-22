@@ -1,7 +1,6 @@
 package Pieces;
 
 import java.util.Vector;
-import ChessGame.Player;
 import ChessBoards.Grid;
 
 public abstract class Piece {
